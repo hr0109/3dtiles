@@ -27,6 +27,7 @@ fn build_win_msvc() {
     println!("cargo:rustc-link-lib=osgDB");
     println!("cargo:rustc-link-lib=osgUtil");
     println!("cargo:rustc-link-lib=osgViewer");
+    println!("cargo:rustc-link-lib=OpenThreads");
 
     Command::new("cmd")
         .args(&[
